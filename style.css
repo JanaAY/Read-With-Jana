@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Sniglet&display=swap');
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+* {
+ outline: none;
+ box-sizing: border-box;
+}
+
+/* main{
+  background-color: #e0edd4;
+} */
+
+/* navbar */
+
+header{
+    position: sticky;
+    top: 0;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    flex-shrink: 0;
+    color: #263e0f;
+}
+
+.navbar{
+  height: 110px;
+}
+
+.dropdown{
+    margin-right: 5px;
+    margin-left: 5px;
+  margin-bottom: 3px;
+}
+
+.d-flex{
+  margin-bottom: 6px;
+}
+
+#logo{
+    max-width: 80px;
+    max-height: 80px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#logo:hover{
+    transform: rotate(20deg);
+}
+
+.logo{
+    display: flex;
+    float: left;
+}
+
+#R{
+    color: #263e0f;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#E{
+    color: #fbadaf;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#A{
+    color: #4f7a28;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#D{
+    color: #b92d5d;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#with{
+  color: #b92d5d;
+}
+
+#Jana{
+    font-weight: bolder;
+    font-size: 23px;
+    color: #fbadaf;
+}
+
+.library{
+    display: flex;
+}
+
+#library_logo{
+    max-width: 70px;
+    max-height: 30px;
+    padding-right: 5px;
+    margin-top: 5px;
+}
+
+#bestsellers_logo{
+  max-width: 140px;
+  max-height: 140px;
+}
+
+#my_library{
+    font-weight: bolder;
+    color: #263e0f;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#language_logo{
+  max-width: 70px;
+  max-height: 30px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+}
+
+/* best sellers navbar */
+
+.sellers{
+    margin-left: 100px;
+}
+
+#best_sellers_style{
+    font-weight: bolder;
+    color: #263e0f;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+#categories, #en{
+    color: #263e0f;
+    font-weight: bolder;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: #263e0f;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 18px;
+}
+
+#item{
+  color: #b92d5d;
+}
+
+
+.navbar-brand{
+    margin-top: 10px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.navbar-nav{
+  padding-left: 20px !important;
+}
+
+#searchlogo{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.navbar>.container-fluid{
+    /* justify-content: end !important; */
+    margin-right: 10px;
+}
+
+#dropdownMenuButton1{
+    background-color: transparent;
+    color: #263e0f;
+    border-color: transparent;
+}
+
+#dropdownMenuButton1:hover{
+    background-color: white;
+    border: 1px solid green;
+}
+
+/* introduction section */
+
+.introduction_section{
+    display: flex;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+#background-image{
+    width: 100%;
+}
+
+
+/* tags */
+
+h1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: green;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+h2{
+  margin-top: 0px !important;
+}
+
+h3{
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+p{
+  margin-bottom: auto;
+}
+
+/* best seller */
+
+#best_sellers{
+  padding-bottom: 20px;
+}
+
+#best-seller-titles{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+@media (max-width:800px){
+  #best-seller-titles{
+    display:block;
+  }
+  .book-cell{
+    display:block;
+  }
+  .book-content{
+    padding-right:0px;
+    padding-left:0px;
+    text-align:center;
+    max-width:100%;
+    margin-top:50px;
+  }
+  
+  /* in library */
+  #display-library .book{
+    max-width:70%;
+  }
+  /* #display-library .book .description{
+    margin-top:30px;
+  } */
+  #display-library .book .delete-button{
+    float:none;
+  }
+  #display-library #library_books_sellers{
+    display:block;
+  }
+}
+
+/* footer */
+
+.footer{
+    margin-top: 100px;
+    text-align: center;
+    background-color: #e0edd4;
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #263e0f;
+    /* height: 110px; */
+}
+
+.logo2{
+    display: flex;
+    justify-content: center;
+    /* padding-top: 20px; */
+}
+
+#copyright{
+    font-size: 20px;
+    text-align: center;
+  margin-bottom: 0px !important;
+  padding-bottom: 10px;
+}
+
+/* cards  */
+
+.entry {
+    /* padding: 0 10px; */
+    color: black;
+    overflow: hidden;
+}
+
+.book-slide {
+    width: 100%;
+   }
+
+.book-cell {
+    display: flex;
+    justify-content: center; 
+    padding: 25px;
+    margin: auto;
+    margin-bottom: 30px ;
+}
+   
+.book-cover{
+    flex-shrink: 0;
+    bottom: -35px;
+    left: 35px;
+    border-radius: 2px;
+    box-shadow: -2px 6px 19px 0px #7f818e;
+    transition: .3s ease;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+   
+}
+
+/* .book-cover:hover {
+  transform: scale(1.03);
+
+} */
+
+.book-photo {
+    flex-shrink: 0;
+    bottom: -35px;
+    left: 35px;
+    border-radius: 2px;
+    box-shadow: -2px 6px 19px 0px #c0c0c0;
+    transition: .3s ease;
+
+}
+/* 
+.book-photo:hover {
+    transform: scale(1.03);
+    width: 180px;
+    flex-shrink: 0;
+    bottom: -35px;
+    left: 35px;
+    border-radius: 2px;
+    margin-right: 20px;
+    box-shadow: -2px 6px 19px 0px #929292;
+} */
+
+.book-img {
+  text-align: center;
+  flex-shrink: 0;
+  padding-top: 10px;
+}
+
+.book-content {
+    padding-left: 30px;
+    width: 400px;
+    /* padding-right: 30px; */
+    color: black;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-top: 0px;
+
+}
+
+.book-title {
+ text-overflow: ellipsis;
+  font-size: 20px;
+  color: #38571a;
+  font-weight: 500px;
+  text-decoration: underline;
+  /* margin-top: 20px; */
+  padding-top: 10px;
+}
+
+.save_button{
+  float: right;
+  background-color: transparent;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  padding-top: 10px;
+}
+
+.save_button:hover{
+    transform: translateY(0) scale(1.5);
+    
+}
+
+.delete-button:hover{
+    transform: translateY(0) scale(1.5);
+}
+
+.book-author {
+ margin-top: 3px;
+ font-size: 18px;
+ text-overflow: ellipsis;
+  color: #fbadaf;
+}
+
+.publisher {
+    margin-top: 10px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    color: #263e0f
+}
+
+.book-sum {
+    margin-top: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #4f7a28;
+  
+}
+
+.stats{
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #b92d5d;
+}
+
+.page_count{
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #b1dd8c;
+}
+
+hr{
+    margin: 1rem 0;
+    color: #f4a4c0 !important;
+    background-color: #f4a4c0;
+    border: 0;
+    opacity: .25;
+}
+
+
+.book-see1, .book-see2{
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+    font-size: 14px;
+    width: 160px;
+    border-radius: 20px;
+    border-color: grey;
+    text-decoration: none;
+}
+
+.book-see3{
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #ed719e;
+  
+}
+
+.book-see3:hover{
+  color: #b1dd8c;
+}
+
+.book-see3:visited{
+  color: #b92d5d;
+}
+
+.book-see1{
+    color: #b92d5d;
+    background-color: #cce8b5;
+    font-weight: 600;
+   }
+e0edd4
+.book-see1:hover{
+  text-decoration: none;
+  color: #96d35f;
+}
+
+.book-see1:visited{
+  text-decoration: none;
+  color: #4f7a28;
+}
+
+.book-see1:linked{
+  text-decoration: none;
+  color: #b92d5d;
+}
+
+.book-see1:active{
+  text-decoration: none;
+  color: #96d35f;
+}
+
+
+.book-see2{
+    color: #4f7a28;
+    background-color: #f4a4c0;
+    font-weight: 600;
+   }
+
+.book-see2:hover{
+  text-decoration: none;
+  color: #ed719e;
+}
+
+.book-see2:visited{
+  text-decoration: none;
+  color: #b92d5d;
+}
+
+.book-see2:linked{
+  text-decoration: none;
+  color: #96d35f;
+}
+
+.book-see2:active{
+  text-decoration: none;
+  color: #96d35f;
+}
+
+.open-book{
+    padding: 5px;
+}
+
+/* my library style */
+
+.welcome_to_your_library{
+    color: #b92d5d;
+}
+
+#library_books{
+    display: grid; 
+    grid-template-columns: auto auto;
+}
+
+
+@media (max-width: 800px) {
+#library_books{
+  display: block;
+  grid-template-columns: auto;
+}
+}
+
+#library_books_sellers{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.container {
+    margin: auto auto;
+    max-width: 910px;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+  }
+
+  .fa {
+    margin-right: 20px;
+    font-size: 30px;
+    color: gray;
+    float: right;
+  }
+  
+  .book {
+    display: inline-block;
+    width: 380px;
+    box-shadow: 0 0 20px #aaa;
+    margin: 25px;
+    padding: 10px;
+    vertical-align: top;
+    transition: height 1s;
+  }
+
+  .delete-button{
+    font-family: FontAwesome;
+    content: "\f006";
+    background-color: transparent;
+	color: inherit;
+	border: none;
+    left: -.1cm;
+    top: -1.6cm;
+    float: right;
+  }
+
+  .cover {
+    border: 2px solid gray;
+    height: 80%;
+    overflow: hidden;
+  }
+  
+  .cover img {
+    width: 100%;
+  }
+  
+  .book .author {
+    font-size: 15px;
+  }
+
+
+
+  /* responsive */
+
+  @media (max-width: 900px) {
+    .container {
+      max-width: 700px;
+    }
+    .book {
+      margin: 49px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .book {
+      display: block;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+    .book-cell{
+      display: block;
+    }
+    .book-content{
+      width: 100%;
+      padding-right: 0px;
+      padding-top: 10px;
+      padding-left: 0px;
+      /* padding: 10px; */
+    }
+    .book-img{
+      padding-top: 0px;
+    }
+    /* .book-title{
+      padding-top: 0px;
+    } */
+    .description{
+      margin-top: 10px;
+    }
+    /* .save_button{
+      padding-top: 0px;
+    } */
+}
+  
+  @media (max-width: 900px) {
+    .library {
+      display: flex;
+      margin: 0 auto;
+    }
+    /* #navbarSupportedContent{
+      background-color: white;
+    } */
+    #navbarSupportedContent{
+      background-color: white;
+      padding: 10px;
+    }
+    .navbar{
+      padding-top: 0 !important;
+    }
+    #search{
+      padding: 20px;
+    }
+  }
+
+
+  @media (max-width: 990px) {
+    #navbarSupportedContent{
+      background-color: white;
+      padding: 10px;
+    }
+  }
+
+
+  .list-th:target .book {
+    height: 100px;
+    width: 250px;
+    padding: 10px;
+    margin: 25px auto 25px auto;
+  }
+  
+  .list-th:target .cover {
+    width: 246px;
+  }
+  
+  .list-th:target img {
+    opacity: .1;
+  }
+  
+  .list-th:target p {
+    margin-top: -62px;
+    margin-left: 20px;
+  }
+
+  /* remove button? */
+  .large-th:target .book {
+    height: 390px;
+  }
+
+
+    /* CSS for the custom dialog box */
+    /* .custom-alert {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    } */
+
+
+#titles{
+  text-align: center;
+  color: #4f7a28;
+  text-decoration: underline;
+  padding-top: 50px;
+}
